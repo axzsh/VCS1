@@ -1,0 +1,123 @@
+/* ----------  Core Reset  ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------  Palette  ---------- */
+:root {
+  --pink-50: #fff7fb;
+  --pink-100: #ffe4f0;
+  --pink-300: #ffb5d5;
+  --pink-500: #ff75b0;
+  --pink-900: #562133;
+  --gray-900: #1f1f1f;
+  --radius: 1.25rem;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ----------  Base  ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--pink-50);
+  color: var(--gray-900);
+  line-height: 1.6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--pink-900);
+  letter-spacing: 0.5px;
+}
+
+/* ----------  Product Grid  ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ----------  Product Image  ---------- */
+.card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* ----------  Content  ---------- */
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--gray-900);
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--pink-500);
+  font-size: 1.1rem;
+}
+
+/* ----------  Button  ---------- */
+.btn {
+  background: var(--pink-500);
+  color: #fff;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: calc(var(--radius) / 2);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--pink-300);
+}
+
+/* ----------  Cart Badge  ---------- */
+#cart-count {
+  background: var(--pink-500);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}

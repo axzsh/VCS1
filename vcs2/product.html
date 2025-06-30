@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow & Grace – Skincare Boutique</title>
+  <link rel="stylesheet" href="products.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <h1>Balalakyu Khwa <span id="cart-count">3</span></h1>
+
+  <section class="grid">
+    <!-- Product 1 -->
+    <article class="card">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+         alt="Rosewater Hydrating Mist">
+      <div class="content">
+        <h2 class="name">Rosewater Hydrating Mist</h2>
+        <p class="desc">A refreshing spritz that instantly revitalizes and balances your skin's pH.</p>
+        <span class="price">NPR&nbsp;1,200</span>
+        <button class="btn" onclick="addToCart('Rosewater Hydrating Mist')">Add&nbsp;to&nbsp;Cart</button>
+      </div>
+    </article>
+
+    <!-- Product 2 -->
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1556228724-4c8f3f974f57?auto=format&fit=crop&w=900&q=80"
+           alt="Silk Peptide Serum">
+      <div class="content">
+        <h2 class="name">Silk Peptide Serum</h2>
+        <p class="desc">Concentrated peptides smooth fine lines and leave a velvety, youthful glow.</p>
+        <span class="price">NPR&nbsp;2,800</span>
+        <button class="btn" onclick="addToCart('Silk Peptide Serum')">Add&nbsp;to&nbsp;Cart</button>
+      </div>
+    </article>
+
+    <!-- Product 3 -->
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80"
+           alt="Cloudberry Night Cream">
+      <div class="content">
+        <h2 class="name">Cloudberry Night Cream</h2>
+        <p class="desc">Deep‑nourishing formula with Arctic cloudberries for overnight repair.</p>
+        <span class="price">NPR&nbsp;2,250</span>
+        <button class="btn" onclick="addToCart('Cloudberry Night Cream')">Add&nbsp;to&nbsp;Cart</button>
+      </div>
+    </article>
+  </section>
+
+  <script src="p.js"></script>
+</body>
+</html>
